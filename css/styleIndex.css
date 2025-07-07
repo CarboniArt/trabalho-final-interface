@@ -1,0 +1,317 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins'
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header-Revendedor{
+    display: flex;
+    min-height: 30px;
+    align-items: center;
+}
+
+.header-Revendedor .fa-location-dot {
+    color: #757171;
+    font-size: 1rem; 
+    margin-left: 8px;
+}
+
+.header-Revendedor a {
+    text-decoration: none;
+    color: #949494;
+    font-weight: bold;
+    font-size: 1rem; 
+    margin-left: 8px;
+}
+
+/* Div barra de pesquisa */
+.header-Pesquisa {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-Loverposting .logo {
+    max-height: 100px; 
+    display: block;
+    padding: 20px 0px;
+    
+    
+}
+
+.barra-de-pesquisa {
+    position: relative;
+    display: flex;
+}
+
+.barra-de-pesquisa .search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #9e9e9e;
+    
+}
+
+.barra-de-pesquisa input[type="search"] {
+    width: 100%;
+    flex-grow: 1;
+    padding: 12px 20px 12px 45px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.header-Pesquisa button[type="submit"] {
+    padding: 12px 25px;
+    border: none;
+    background-color: #212121;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header-Pesquisa button[type="submit"]:hover {
+    background-color: #424242;
+}
+
+.user-button {
+    font-size: 1.8rem;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 1s ease;
+    padding: 10px;
+    margin-left: auto;
+
+}
+
+
+.user-button:hover {
+    color: purple;
+}
+
+
+/*div navegação */
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.topicos {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    background-color: #ffffff;
+    padding: 1rem 2rem;             
+}
+
+.topicos-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 35px; 
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;                  
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+
+.nav-item.active {
+    color: purple;
+}
+
+.promoção {
+    background-color: purple;
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.promoção:hover {
+    background-color: plum;
+    color: #ffffff;
+}
+
+.emoji-coracao {
+    vertical-align: middle;
+}
+
+/* div imagem central */
+
+.secao-roxa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('/Imagens/imagemroxa.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px; 
+    min-height: 300px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+
+}
+
+
+.coluna-presente {
+    flex: 1;
+}
+
+.coluna-presente .presente {
+    max-width: 70%;
+    margin-left: 20%;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+.coluna-conteudo {
+    flex: 1; 
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coluna-conteudo h2{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.btn-comprar {
+    padding: 12px 25px;
+    border: none;
+    background-color: white;
+    color: #212121;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+
+/* Div Footer */
+#footer-placeholder {
+    background-color: #212121;
+    color: #ffffff;
+    width: 100%;
+    padding: 0.8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+footer nav a {
+    color: #cc99ff; 
+    text-decoration: none;
+    margin: 0 0.5rem; 
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 857px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header-Pesquisa {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .user-button {
+        justify-self: center;
+    }
+
+    .topicos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topicos-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .secao-roxa {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .coluna-conteudo {
+        padding-left: 0;
+    }
+    
+    .coluna-conteudo h2 {
+        font-size: 1.5rem;
+    }
+
+    .coluna-presente .presente {
+        margin-left: 0;
+        max-width: 60%;
+    }
+}

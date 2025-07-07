@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Loverposting</title>
+    <link rel="stylesheet" href="/css/styleIndex.css">
+    <link rel="stylesheet" href="/css/styleLogin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ctext x='10' y='90' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="header-placeholder"></div>
+        </header>
+
+
+        <main>
+            <section class="topicos">
+                <ul class="topicos-links">
+                    <li><a href="/html/index.html" class="nav-item">Home</a></li>
+                    <li><a href="/html/us.html" class="nav-item">LoverPosting <span class="emoji-coracao">❤️</span></a>
+                    </li>
+                    <li><a href="/html/produtos.html" class="nav-item">Shop</a></li>
+                </ul>
+                <div class="topicos-actions">
+                    <a href="#" class="promoção">Corra!! 30% off</a>
+                </div>
+            </section>
+
+            <div id="feedbackMessage" class="feedback-message" role="alert" aria-live="assertive">
+                <p></p>
+                <button aria-label="Fechar mensagem">✖</button>
+            </div>
+
+            <section class="secao-roxa login-background">
+                <div class="login-container">
+                    <h2>Acesse sua Conta</h2>
+                    <form class="login-form" novalidate>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn-login">ENTRAR</button>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="footer-placeholder"></div>
+        </footer>
+    </div>
+
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/login.js" defer></script>
+</body>
+
+</html>
